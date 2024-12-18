@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #262626;
+}
+
+body {
+    background-color: #EEF0EB;
+}
+
+.navbar{
+    font-family: "Instrument Sans", sans-serif;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz com que a navbar ocupe toda a largura da tela */
+    z-index: 1000; /* Garante que ela fique acima de outros elementos */
+}
+
+.navbar :hover {
+    color: #F76C5E;
+}
+
+.container-fluid {
+    background-color: #F4F9E9;
+}
+
+.titulo {
+    font-family: "Instrument Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh ;
+}
+
+#imagem-logo{
+    max-width: 150px;
+}
+
+.active{
+    color: #F76C5E !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #F76C5E;
+    border-bottom: 2px solid #F76C5E;
+}
+
+/* Estilizar a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    height: 8px; /* Altura da barra de rolagem (para scroll horizontal) */
+  }
+  
+  /* Estilizar o trilho */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do trilho */
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+  
+  /* Estilizar o polegar */
+::-webkit-scrollbar-thumb {
+    background: #F76C5E; /* Cor do polegar */
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+  
+  /* Hover no polegar */
+::-webkit-scrollbar-thumb:hover {
+    background: #262626; /* Cor ao passar o mouse */
+  }
+
+/* Área Sobre */
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px; /* Espaçamento padrão para desktop */
+  }
+  
+  /* Estilos para o texto e imagem no desktop */
+  .texto-sobre {
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    background-color: #F76C5E;
+    padding: 50px;
+  }
+  
+  .foto-sobre {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    padding: 0;
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+  }
+  
+  /* Estilos responsivos para telas menores que 768px */
+  @media (max-width: 768px) {
+    .sobre {
+      flex-direction: column; /* Empilha os elementos verticalmente */
+      gap: 20px; /* Reduz o espaçamento entre os elementos */
+    }
+  
+    .texto-sobre {
+      width: 90%; /* Ajusta a largura para caber na tela */
+      height: auto; /* Permite que a altura seja ajustada pelo conteúdo */
+      padding: 30px; /* Reduz o padding */
+      text-align: center; /* Centraliza o texto */
+    }
+  
+    .foto-sobre {
+      width: 250px; /* Ajusta o tamanho da imagem */
+      height: 250px;
+    }
+  }
+  
+  /* Estilos para telas muito pequenas (menores que 480px) */
+  @media (max-width: 480px) {
+    .texto-sobre {
+      padding: 20px; /* Reduz ainda mais o padding */
+      font-size: 14px; /* Reduz o tamanho do texto */
+    }
+  
+    .foto-sobre {
+      width: 200px; 
+      height: 200px; /* Ajusta ainda mais o tamanho da imagem */
+    }
+  }
+  
+  
+/* Área Skils */
+.skils {
+    margin-top: 300px;
+    gap: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .texto-skils {
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    background-color: #F76C5E;
+    padding: 50px;
+  }
+  
+  .foto-skils {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    padding: 0px;
+    object-fit: cover; /* Evita distorção da imagem */
+  }
+  
+  /* Área Icons */
+  .icons {
+    display: flex;
+    background-color: #F4F9E9;
+    width: 1150px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; /* Centraliza a área Icons horizontalmente */
+    border-radius: 20px; /* Arredonda as bordas */
+  }
+  
+  .icons-skils {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 100px;
+    box-shadow: inset;
+  }
+  
+  .icons-skils img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    /* Ajustes para Skils */
+    .skils {
+      flex-direction: column; /* Empilha os elementos verticalmente */
+      gap: 30px; /* Reduz o espaçamento entre os elementos */
+      margin-top: 150px; /* Ajusta a margem superior */
+    }
+  
+    .texto-skils {
+      width: 90%; /* Ajusta a largura do texto */
+      height: auto; /* Permite que o conteúdo determine a altura */
+      padding: 30px; /* Reduz o padding interno */
+      text-align: center; /* Centraliza o texto */
+    }
+  
+    .foto-skils {
+      width: 300px; 
+      height: 300px; /* Ajusta o tamanho da imagem */
+    }
+  
+    /* Ajustes para Icons */
+    .icons {
+      flex-direction: column; /* Empilha os ícones em telas menores */
+      width: 100%; /* Ajusta a largura para ocupar a tela */
+      height: auto; /* Permite que a altura se ajuste ao conteúdo */
+      padding: 20px; /* Adiciona espaço interno */
+      border-radius: 20px; /* Arredonda as bordas */
+    }
+  
+    .icons-skils {
+      flex-wrap: wrap; /* Permite quebra de linha para os ícones */
+      gap: 20px; /* Reduz o espaçamento entre os ícones */
+    }
+  
+    .icons-skils img {
+      width: 50px; 
+      height: 50px; /* Diminui o tamanho dos ícones */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Ajustes adicionais para Skils */
+    .texto-skils {
+      padding: 20px; /* Reduz ainda mais o padding interno */
+      font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+  
+    .foto-skils {
+      width: 200px;
+      height: 200px; /* Diminui ainda mais o tamanho da imagem */
+    }
+  
+    /* Ajustes adicionais para Icons */
+    .icons-skils img {
+      width: 40px;
+      height: 40px; /* Reduz ainda mais o tamanho dos ícones */
+    }
+  }
+  
+
+  /* Area Projetos */
+
+  #btn-git {
+    background-color: #262626;
+    color: #F4F9E9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
