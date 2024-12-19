@@ -19,14 +19,11 @@ body {
     left: 0;
     width: 100%; /* Faz com que a navbar ocupe toda a largura da tela */
     z-index: 1000; /* Garante que ela fique acima de outros elementos */
+    background-color: #F4F9E9;
 }
 
 .navbar :hover {
     color: #F76C5E;
-}
-
-.container-fluid {
-    background-color: #F4F9E9;
 }
 
 .titulo {
@@ -137,7 +134,7 @@ body {
   
 /* Área Skils */
 .skils {
-    margin-top: 300px;
+    margin-top: 250px;
     gap: 110px;
     display: flex;
     align-items: center;
@@ -249,11 +246,61 @@ body {
 
   /* Area Projetos */
 
-  #btn-git {
+  .projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 200px;
+  }
+
+  .colunas {
+    gap: 20px;
+  }
+
+  .img-fluid{
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn-git {
     background-color: #262626;
     color: #F4F9E9;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 16px;
+  }
+
+  .btn-site{
+    background-color: #F76C5E;
+    color: #F4F9E9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .card{
+    height: 200px;
+  }
+
+  .card-body{
+    background-color: #F4F9E9;
+    width: 100%;
+  }
+
+  .card-info {
+    width: 100%;
+    height: 100%;
+  }
+
+  .imagem-projeto {
+    width: 50%;
+  }
+
+  /* Area Contato */
+
+  .contatos {
+    margin-top: 400px;
   }
