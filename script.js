@@ -69,6 +69,7 @@ activateNavLink();
 
 
 // A função que será executada ao clicar nos links de navegação
+// A função que será executada ao clicar nos links de navegação
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -90,6 +91,9 @@ function onScroll() {
   const sections = document.querySelectorAll('section');  // Seleciona todas as seções
   const links = document.querySelectorAll('.navbar a');   // Seleciona todos os links da navbar
 
+  // Primeiro remove a classe 'active' de todos os links
+  links.forEach(link => link.classList.remove('active'));
+
   sections.forEach(section => {
       const rect = section.getBoundingClientRect(); // Obtém a posição da seção na tela
       const sectionId = section.getAttribute('id');
@@ -98,8 +102,6 @@ function onScroll() {
       // Verifica se a seção está visível na tela
       if (rect.top <= 0 && rect.bottom >= 0) {
           link.classList.add('active'); // Adiciona a classe active
-      } else {
-          link.classList.remove('active'); // Remove a classe active
       }
   });
 }
@@ -109,3 +111,4 @@ window.addEventListener('scroll', onScroll);
 
 // Chama a função onScroll para garantir que a navegação seja ajustada ao carregar a página
 onScroll();
+
