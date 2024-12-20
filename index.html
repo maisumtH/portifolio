@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <title>Portifólio | Thyago Santos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
+    <!-- SEO -->
+<meta name="description" content="Olá, sou Thyago Santos, apaixonado por tecnologia e especialista em desenvolvimento de interfaces modernas e funcionais. Com expertise em linguagens e ferramentas como HTML5, CSS3, JavaScript. Meu foco é criar experiências digitais que sejam responsivas, acessíveis e visualmente atraentes.">
+<meta name="author" content="Thyago Santos | Radiance">
+<meta name="keywords" content="Design Responsivo, Desenvolvimento Web, Interfaces Interativas, UI/UX Design, Acessibilidade Web (WCAG), HTML5,
+CSS3, JavaScript, Bootstrap, Integração com APIs"/>
+      
+<link rel="alternate" href="pt-br" hreflang="pt-br" />
+
+<meta name="robots" content="index, follow"> 
+		
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta property="og:url"             content="URL" /> 
+<meta property="og:title"           content="Portifólio | Thyago Santos" /> 
+<meta property="og:image"           content="URL IMAGEM" /> 
+<meta property="og:description"     content="Olá, sou Thyago Santos, apaixonado por tecnologia e especialista em desenvolvimento de interfaces modernas e funcionais. Com expertise em linguagens e ferramentas como HTML5, CSS3, JavaScript. Meu foco é criar experiências digitais que sejam responsivas, acessíveis e visualmente atraentes." />
+
+<meta name="theme-color" content="#F76C5E">
+<meta name="apple-mobile-web-app-status-bar-style" content="#F76C5E" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon" href="src/nuvem-de-sol 1.svg" />
+<meta property="business:contact_data:country_name" content="Brasil" />
+<meta property="business:contact_data:website" content="URL" />
+<meta property="business:contact_data:region" content="BA" />
+<meta property="business:contact_data:email" content="thyagos3820@gmail.com" />
+<meta property="business:contact_data:phone_number" content="TEL" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="DESCRIÇÃO"/>
+<meta name="twitter:title" content="Portifólio | Thyago Santos" />
+<meta name="twitter:image" content="URL IMAGEM" />
+
+<meta name="geo.placename" content="LOCALIZAÇÃO" />
+<meta name="geo.region" content="BR" />
+<meta name="description" content="DESCRIÇÃO" />
+<link rel="canonical" href="URL" />
+ 
+<meta property="og:type"            content="website" />
+<meta property="og:locale"          content="pt_BR" />
+<meta name="format-detection" content="telephone=no">
+<!-- SEO -->
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg">
@@ -61,15 +102,17 @@
     </section>
 
     <!--Area Sobre  -->
-    <section class="sobre d-flex align-items-center justify-content-center text-center text-md-start">
-      <div>
-        <img class="foto-sobre" src="src/bunito.jpeg" alt="Foto de perfil">
-      </div>
+    <!-- Área Sobre -->
+<section id="Sobre" class="sobre d-flex align-items-center justify-content-center text-center text-md-start">
+  <div>
+    <img class="foto-sobre" src="src/bunito.jpeg" alt="Foto de perfil">
+  </div>
 
-      <div id="Sobre" class="texto-sobre">
-        <p>Firulais</p>
-      </div>
-    </section>
+  <div class="texto-sobre">
+    <p>Firulais</p>
+  </div>
+</section>
+
 
     <!--Area Skils -->
     <section id="Skils"  class="skils d-flex align-items-center justify-content-center text-center text-md-start">
@@ -95,130 +138,136 @@
 
     <!-- Area Projetos -->
 
-    <section id="Projetos" class="projetos container-fluid d-flex align-items-center justify-content-center text-center text-md-start">
+    <section id="Projetos" class="projetos container py-5">
       <div class="row">
-
-        <div class="colunas col-6 ">
-          <div class="card mb-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="imagem-projeto col-md-4">
-                <img src="src/buscar-paises.png"  class=" img-fluid rounded-start" alt="...">
-              </div>
-              <div class="card-info col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Buscador de Paises</h5>
-                  <p class="card-text">Esse site foi desenvolvido para que voçê possa fazer um pesquisa rapida a paises e suas informações</p>
-                  <a href="#" class="btn btn-site">Visite o site</a>
-                  <a href="https://github.com/maisumtH/Buscador-de-Paises.git" class="btn btn-git">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="imagem-projeto col-md-4">
-                <img src="src/buscar-paises.png" class=" img-fluid rounded-start" alt="...">
-              </div>
-              <div class="card-info col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Buscador de Paises</h5>
-                  <p class="card-text">Esse site foi desenvolvido para que voçê possa fazer um pesquisa rapida a paises e suas informações.</p>
-                  <a href="#" class="btn btn-site">Visite o site</a>
-                  <a href="https://github.com/maisumtH/Buscador-de-Paises.git" class="btn btn-git">GitHub</a>
-                </div>
-              </div>
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card">
+            <img src="src/buscar-paises.png" class="card-img-top" alt="Imagem do projeto">
+            <div class="card-body">
+              <h5 class="card-title">Buscador de Países</h5>
+              <p class="card-text">Esse site foi desenvolvido para que você possa fazer uma pesquisa rápida sobre países e suas informações.</p>
+              <a href="#" class="btn btn-site">Visite o site</a>
+              <a href="https://github.com/maisumtH/Buscador-de-Paises.git" class="btn btn-git">GitHub</a>
             </div>
           </div>
         </div>
-
-        <div class=" col-6">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="imagem-projeto col-md-4">
-                <img src="" width="100" class="imagem-projeto img-fluid rounded-start" alt="...">
-              </div>
-              <div class="card-info col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Firulais</h5>
-                  <p class="card-text">...</p>
-                  <a href="#" class="btn btn-site">Visite o site</a>
-                  <a href="https://github.com/maisumtH/Buscador-de-Paises.git" class="btn btn-git">GitHub</a>
-                </div>
-              </div>
+    
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card">
+            <img src="src/buscar-paises.png" class="card-img-top" alt="Imagem do projeto">
+            <div class="card-body">
+              <h5 class="card-title">Buscador de Países</h5>
+              <p class="card-text">Esse site foi desenvolvido para que você possa fazer uma pesquisa rápida sobre países e suas informações.</p>
+              <a href="#" class="btn btn-site">Visite o site</a>
+              <a href="https://github.com/maisumtH/Buscador-de-Paises.git" class="btn btn-git">GitHub</a>
             </div>
           </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="src/buscar-paises.png" class="imagem-projeto img-fluid rounded-start" alt="...">
-              </div>
-              <div class="card-info col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Firulais</h5>
-                  <p class="card-text">...</p>
-                  <a href="#" class="btn btn-site">Visite o site</a>
-                  <a href="https://github.com/maisumtH/Buscador-de-Paises.git" class="btn btn-git">GitHub</a>
-                </div>
-              </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div id="card3" class="col">
+          <div class="card">
+            <img src="src/buscar-paises.png" class="card-img-top" alt="Imagem do projeto Firulais">
+            <div class="card-body">
+              <h5 class="card-title">Firulais</h5>
+              <p class="card-text">Esse projeto é uma aplicação para gerenciar informações sobre cães adotáveis.</p>
+              <a href="#" class="btn btn-site">Visite o site</a>
+              <a href="https://github.com/maisumtH/Firulais.git" class="btn btn-git">GitHub</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card">
+            <img src="src/buscar-paises.png" class="card-img-top" alt="Imagem do projeto Firulais">
+            <div class="card-body">
+              <h5 class="card-title">Firulais</h5>
+              <p class="card-text">Esse projeto é uma aplicação para gerenciar informações sobre cães adotáveis.</p>
+              <a href="#" class="btn btn-site">Visite o site</a>
+              <a href="https://github.com/maisumtH/Firulais.git" class="btn btn-git">GitHub</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Area Contatos -->
 
-    <section id="Contato" class="contatos page-section d-flex align-items-center justify-content-center text-center text-md-start">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Fale Conosco e Solucione Suas Necessidades!</h2>
-                    <hr class="divider" />
-                    <p class="text-muted mb-5">Entre em contato comigo e descubra como posso ajudar você. Estou pronto para atender suas dúvidas.</div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                <div class="col-lg-6">
-                    <form id="contactForm" action="https://api.sheetmonkey.io/form/oRpBi6vDvGWTEANqhzqFvq" method="post">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" name="name" id="name" type="text" placeholder="Digite seu nome..." data-sb-validations="required" />
-                            <label for="name">Nome Completo</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Campo nome necessário.</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Adicione Email</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">Campo email necessário.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Esse email não é valido.</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" name="phone" id="phone" type="tel" placeholder="(75) 93456-7890" data-sb-validations="required" />
-                            <label for="phone">Número</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">Campo número necessário.</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" name="message" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Mensagem</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Campo mensagem necessário.</div>
-                        </div>
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms"></a>
-                            </div>
-                        </div>
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error a enviar mensagem!</div></div>
-                        <div class="d-grid"><button class="btn btn-site btn-xl" id="submitButton" type="submit">Enviar mensagem</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="Contatos" class="contatos page-section d-flex align-items-center justify-content-center text-center text-md-start">
+      <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-lg-8 col-xl-6 text-center">
+                  <h2 class="mt-0">Fale Conosco e Solucione Suas Necessidades!</h2>
+                  <hr class="divider" />
+                  <p class="text-muted mb-5">Entre em contato comigo e descubra como posso ajudar você. Estou pronto para atender suas dúvidas.</p>
+              </div>
+          </div>
+          <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+              <div class="col-lg-6">
+                  <form id="contactForm" action="https://api.sheetmonkey.io/form/oRpBi6vDvGWTEANqhzqFvq" method="post">
+                      <div class="form-floating mb-3">
+                          <input class="form-control" name="name" id="name" type="text" placeholder="Digite seu nome..." data-sb-validations="required" />
+                          <label for="name">Nome Completo</label>
+                          <div class="invalid-feedback" data-sb-feedback="name:required">Campo nome necessário.</div>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                          <label for="email">Adicione Email</label>
+                          <div class="invalid-feedback" data-sb-feedback="email:required">Campo email necessário.</div>
+                          <div class="invalid-feedback" data-sb-feedback="email:email">Esse email não é válido.</div>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input class="form-control" name="phone" id="phone" type="tel" placeholder="(75) 93456-7890" data-sb-validations="required" />
+                          <label for="phone">Número</label>
+                          <div class="invalid-feedback" data-sb-feedback="phone:required">Campo número necessário.</div>
+                      </div>
+                      <!-- Campo Assunto -->
+                      <div class="form-floating mb-3">
+                          <input class="form-control" name="subject" id="subject" type="text" placeholder="Digite o assunto..." data-sb-validations="required" />
+                          <label for="subject">Assunto</label>
+                          <div class="invalid-feedback" data-sb-feedback="subject:required">Campo assunto necessário.</div>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <textarea class="form-control" name="message" id="message" type="text" placeholder="Digite sua mensagem..." style="height: 10rem" data-sb-validations="required"></textarea>
+                          <label for="message">Mensagem</label>
+                          <div class="invalid-feedback" data-sb-feedback="message:required">Campo mensagem necessário.</div>
+                      </div>
+                      <div class="d-none" id="submitSuccessMessage">
+                          <div class="text-center mb-3">
+                              <div class="fw-bolder">Formulário enviado com sucesso!</div>
+                              Para ativar este formulário, cadastre-se em
+                              <br />
+                              <a href="https://startbootstrap.com/solution/contact-forms"></a>
+                          </div>
+                      </div>
+                      <div class="d-none" id="submitErrorMessage">
+                          <div class="text-center text-danger mb-3">Erro ao enviar mensagem!</div>
+                      </div>
+                      <div class="d-grid">
+                          <button class="btn btn-site btn-xl" id="submitButton" type="submit">Enviar mensagem</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
 
   </main>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>

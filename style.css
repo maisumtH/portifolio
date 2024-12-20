@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: none;
@@ -20,7 +21,15 @@ body {
     width: 100%; /* Faz com que a navbar ocupe toda a largura da tela */
     z-index: 1000; /* Garante que ela fique acima de outros elementos */
     background-color: #F4F9E9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Estilo ao rolar */
+.navbar-scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 .navbar :hover {
     color: #F76C5E;
@@ -74,63 +83,99 @@ body {
 
 /* Área Sobre */
 
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #262626;
+}
+
+body {
+    background-color: #EEF0EB;
+}
+
+/* Estilização da navbar */
+.navbar {
+    font-family: "Instrument Sans", sans-serif;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Navbar ocupa toda a largura da tela */
+    z-index: 1000;
+    background-color: #F4F9E9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos da seção Sobre */
 .sobre {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 110px; /* Espaçamento padrão para desktop */
-  }
-  
-  /* Estilos para o texto e imagem no desktop */
-  .texto-sobre {
+    gap: 110px; /* Espaçamento para desktop */
+    padding-top: 100px; /* Para não sobrepor a navbar fixa */
+}
+
+.texto-sobre {
     border-radius: 20px;
     height: 300px;
     width: 500px;
     background-color: #F76C5E;
     padding: 50px;
-  }
-  
-  .foto-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-sobre {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     padding: 0;
     object-fit: cover; /* Ajusta a imagem sem distorção */
-  }
-  
-  /* Estilos responsivos para telas menores que 768px */
-  @media (max-width: 768px) {
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
     .sobre {
-      flex-direction: column; /* Empilha os elementos verticalmente */
-      gap: 20px; /* Reduz o espaçamento entre os elementos */
+        flex-direction: column; /* Empilha os elementos */
+        gap: 20px; /* Reduz o espaçamento */
     }
-  
+
     .texto-sobre {
-      width: 90%; /* Ajusta a largura para caber na tela */
-      height: auto; /* Permite que a altura seja ajustada pelo conteúdo */
-      padding: 30px; /* Reduz o padding */
-      text-align: center; /* Centraliza o texto */
+        width: 90%; /* Ajusta a largura */
+        height: auto; /* Ajusta a altura conforme o conteúdo */
+        padding: 30px;
+        text-align: center; /* Centraliza o texto */
     }
-  
+
     .foto-sobre {
-      width: 250px; /* Ajusta o tamanho da imagem */
-      height: 250px;
+        width: 250px; /* Ajusta a imagem */
+        height: 250px;
     }
-  }
-  
-  /* Estilos para telas muito pequenas (menores que 480px) */
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .texto-sobre {
-      padding: 20px; /* Reduz ainda mais o padding */
-      font-size: 14px; /* Reduz o tamanho do texto */
+        padding: 20px;
+        font-size: 14px; /* Ajusta o tamanho do texto */
     }
-  
+
     .foto-sobre {
-      width: 200px; 
-      height: 200px; /* Ajusta ainda mais o tamanho da imagem */
+        width: 200px;
+        height: 200px; /* Ajusta o tamanho da imagem */
     }
-  }
-  
+}
+
+/* Estilos para hover */
+.sobre :hover {
+    color: #F76C5E;
+}
+
   
 /* Área Skils */
 .skils {
@@ -251,7 +296,25 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin-top: 200px;
+  }
+
+  /* Garantir que os cards fiquem lado a lado */
+  #Projetos .row {
+    display: flex; /* Flexbox para organizar as colunas */
+    flex-wrap: wrap; /* Permitir quebra de linha */
+    gap: 1.5rem; /* Espaçamento entre os cards */
+  }
+
+  #Projetos .col {
+    flex: 1 1 calc(50% - 1.5rem); /* Dois cards por linha */
+    max-width: calc(50% - 1.5rem); /* Garantir o tamanho máximo correto */
+  }
+
+  @media (max-width: 768px) {
+    #Projetos .col {
+      flex: 1 1 100%; /* Em telas pequenas, usar uma coluna */
+      max-width: 100%; /* Garantir que ocupe a largura total */
+    }
   }
 
   .colunas {
@@ -293,6 +356,10 @@ body {
   .card-info {
     width: 100%;
     height: 100%;
+  }
+
+  .card {
+    margin-top: 250px;
   }
 
   .imagem-projeto {
