@@ -170,12 +170,6 @@ body {
         height: 200px; /* Ajusta o tamanho da imagem */
     }
 }
-
-/* Estilos para hover */
-.sobre :hover {
-    color: #F76C5E;
-}
-
   
 /* Área Skils */
 .skils {
@@ -192,6 +186,9 @@ body {
     width: 500px;
     background-color: #F76C5E;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .foto-skils {
@@ -370,4 +367,10 @@ body {
 
   .contatos {
     margin-top: 400px;
+  }
+
+  /* fotter */
+
+  .footer {
+    background-color: #F76C5E;
   }

@@ -66,3 +66,46 @@ navLinks.forEach(link => {
 
 // Inicializa a ativação do link na página ao carregar
 activateNavLink();
+
+
+// A função que será executada ao clicar nos links de navegação
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Obtém o elemento de destino baseado no href
+      const targetElement = document.querySelector(this.getAttribute("href"));
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+      // Rolagem suave ajustando a altura da navbar
+      window.scrollTo({
+          top: targetElement.offsetTop - navbarHeight,
+          behavior: 'smooth'
+      });
+  });
+});
+
+// A função para verificar a visibilidade das seções durante o scroll
+function onScroll() {
+  const sections = document.querySelectorAll('section');  // Seleciona todas as seções
+  const links = document.querySelectorAll('.navbar a');   // Seleciona todos os links da navbar
+
+  sections.forEach(section => {
+      const rect = section.getBoundingClientRect(); // Obtém a posição da seção na tela
+      const sectionId = section.getAttribute('id');
+      const link = document.querySelector(`.navbar a[href="#${sectionId}"]`); // Link correspondente à seção
+
+      // Verifica se a seção está visível na tela
+      if (rect.top <= 0 && rect.bottom >= 0) {
+          link.classList.add('active'); // Adiciona a classe active
+      } else {
+          link.classList.remove('active'); // Remove a classe active
+      }
+  });
+}
+
+// Adiciona o ouvinte de evento de rolagem
+window.addEventListener('scroll', onScroll);
+
+// Chama a função onScroll para garantir que a navegação seja ajustada ao carregar a página
+onScroll();
